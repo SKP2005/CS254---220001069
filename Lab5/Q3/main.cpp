@@ -1,4 +1,4 @@
-//T.C->O(V^2)
+//T.C->O(V^3)
 //S.C->O(V^2)
 
 #include <bits/stdc++.h>
