@@ -1,4 +1,4 @@
-//T.C->O(N)
+//T.C->O(N) N->is the total no. of boxes 
 //S.C->O(N)
 
 #include <bits/stdc++.h>
