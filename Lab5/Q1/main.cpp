@@ -1,5 +1,5 @@
 //T.C->O(V^2)
-//S.C->O(V^2)
+//S.C->O(1)
 
 #include <bits/stdc++.h>
 using namespace std;
