@@ -15,22 +15,26 @@ void dfs(int node,vector<bool>&visited,stack<int>&s,unordered_map<int,list<int>>
 void revDFS(int node,vector<bool>&visited,unordered_map<int,list<int>>&adj){
     visited[node]=1;
     for(auto nbr:adj[node]){
-        revDFS(nbr,visited,adj);
+        if(!visited[nbr]){
+            revDFS(nbr,visited,adj);
+        }
+        
     }
 }
 
 
 int main() {
-    vector<vector<int>> edges = {
+     vector<vector<int>> edges = {
         {0, 1},
         {1, 2},
-        {0, 2},
-        {1, 3},
-        {2, 4},
-        {1, 5}
+        {2, 0},
+        {2, 3},
+        {3, 4},
+        {4, 5},
+        {5,3}
     };
     int V=6;
-    int E=6;
+    int E=7;
     unordered_map<int,list<int>>adj;
     for(int i=0;i<E;i++){
         int u=edges[i][0];

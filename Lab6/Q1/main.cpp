@@ -20,10 +20,9 @@ int main() {
         {1, 2},
         {0, 2},
         {1, 3},
-        {2, 4},
-        {1, 5}
+
     };
-    int v=6;
+    int v=4;
     int e=6;
     unordered_map<int,list<int>>adj;
     for(int i=0;i<e;i++){

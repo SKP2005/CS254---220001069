@@ -9,11 +9,9 @@ int main() {
         {1, 2},
         {0, 2},
         {1, 3},
-        {2, 4},
-        {1, 5}
     };
-    int V=6;
-    int E=6;
+    int V=4;
+    int E=4;
     unordered_map<int,list<int>>adj;
     for(int i=0;i<E;i++){
         int u=edges[i][0];
