@@ -23,7 +23,7 @@ int main() {
 
     };
     int v=4;
-    int e=6;
+    int e=4;
     unordered_map<int,list<int>>adj;
     for(int i=0;i<e;i++){
         int u=edges[i][0];
