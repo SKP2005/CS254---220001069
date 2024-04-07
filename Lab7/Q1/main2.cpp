@@ -14,8 +14,8 @@ int solve(int i,vector<vector<int>>&items,int wlimit,vector<vector<int>>&dp){
 
 int main(){
     vector<vector<int>>items;
-    items={{1,2,10},{2,5,20},{3,7,15},{4,3,7},{5,1,5}};
-    int wlimit=10;
+    items={{1,4,1},{2,5,2},{3,1,3}};
+    int wlimit=4;
     vector<vector<int>>dp(items.size()+1,vector<int>(wlimit+1,-1));
     int res=solve(0,items,wlimit,dp);
     cout<<res<<endl;
